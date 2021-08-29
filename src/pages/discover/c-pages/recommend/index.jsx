@@ -1,5 +1,5 @@
-import React, { memo } from 'react'
-// import { useDispatch,useSelector ,shallowEqual} from 'react-redux'
+import React, { memo, useEffect } from 'react'
+import { useDispatch } from 'react-redux'
 // import {getTopBannersActions} from './store/action'
 //引入connect用于连接UI组件与redux
 // import {connect} from 'react-redux'
@@ -9,9 +9,16 @@ import TopBanner from './c-cpns/top-banners'
 import HotRecommend from './c-cpns/hot-recommend'
 import NewAlbum from './c-cpns/new-album'
 import RankingList from './c-cpns/ranking-list'
+import { getAllTopListAction } from './store/action'
+import UserLogin from './c-cpns/user-login'
 
 function Recommend () {
 
+	const dispatch = useDispatch()
+
+	useEffect(() => {
+		dispatch(getAllTopListAction())
+	}, [dispatch])
 
 	return (
 		<RecommendWrapper>
@@ -22,7 +29,9 @@ function Recommend () {
 					<NewAlbum></NewAlbum>
 					<RankingList></RankingList>
 				</RecommendLeft>
-				<RecommendRight></RecommendRight>
+				<RecommendRight>
+					<UserLogin></UserLogin>
+				</RecommendRight>
 			</Content>
 		</RecommendWrapper>
 	)

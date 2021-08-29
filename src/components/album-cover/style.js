@@ -2,6 +2,12 @@ import styled from 'styled-components'
 
 export const AlbumWrapper = styled.div`
 
+	display: flex;
+	flex: 1;
+	overflow: hidden;
+	flex-direction: column;
+	justify-content:space-between;
+	align-items: center;
 
 	.album-image{
 		position: relative;
@@ -35,6 +41,9 @@ export const AlbumWrapper = styled.div`
     }
     .artist {
       color: #666;
+			white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
 	}
 

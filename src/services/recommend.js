@@ -34,7 +34,7 @@ export function getTopList() {
   })
 }
 
-// 根据id值来获取榜单的数据
+// 根据id值来获取各个榜单的数据
 export function getRankingList(id) {
   return request({
     url:"/playlist/detail",

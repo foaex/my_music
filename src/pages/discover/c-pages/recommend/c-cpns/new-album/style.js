@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const AlbumWrapper = styled.div`
 	margin-top:50px;
 	.content{
-		height: 186px;
+		height: 200px;
 		background-color: #f5f5f5;
 		display: flex;
 		align-items:center; 
@@ -23,9 +23,10 @@ export const AlbumWrapper = styled.div`
 	}
 	.album{
 		width: 650px;
-		height: 154px;
+		height: 160px;
 		.ant-carousel .slick-slide {
-			height: 154px;
+			height: 160px;
+			overflow: hidden;
 		}
 
 		.page {

@@ -6,6 +6,7 @@ import { Provider } from 'react-redux'
 
 import AppHeader from '@/components/app-header'
 import AppFooter from '@/components/app-footer'
+import Play from './pages/play'
 import { renderRoutes } from 'react-router-config'
 
 
@@ -16,6 +17,7 @@ export default memo(function App () {
 				<AppHeader />
 				{renderRoutes(routes)}
 				<AppFooter />
+				<Play></Play>
 			</HashRouter>
 		</Provider >
 	)
