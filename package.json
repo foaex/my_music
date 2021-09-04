@@ -1,6 +1,7 @@
 {
   "name": "my_music",
   "version": "0.1.0",
+  "homepage": "https://foaex.github.io/my_music",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.6.3",
