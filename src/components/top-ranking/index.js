@@ -42,9 +42,9 @@ export default memo(function TopRanking (props) {
 								<div className="info">
 									<a className="text-nowrap" href="/todo">{item.name}</a>
 									<div className="operate">
-                    <button className="btn sprite_02 play" onClick={e => playMusic(item)}></button>
-                    <button className="btn sprite_icon2 addto"></button>
-                    <button className="btn sprite_02 favor"></button>
+                    <button className="btn sprite_02 play" onClick={e => playMusic(item)} title="播放"></button>
+                    <button className="btn sprite_icon2 addto" title="添加到播放列表"></button>
+                    <button className="btn sprite_02 favor" title="收藏"></button>
                   </div>
 								</div>
 							</div>

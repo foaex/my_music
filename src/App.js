@@ -10,14 +10,18 @@ import Play from './pages/play'
 import { renderRoutes } from 'react-router-config'
 
 
+
 export default memo(function App () {
+
+
+
 	return (
 		<Provider store={store}>
 			<HashRouter>
-				<AppHeader />
-				{renderRoutes(routes)}
-				<AppFooter />
-				<Play></Play>
+					<AppHeader />
+					{renderRoutes(routes)}
+					<AppFooter />
+					<Play></Play>
 			</HashRouter>
 		</Provider >
 	)
